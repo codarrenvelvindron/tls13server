@@ -1,5 +1,6 @@
 # TLS 1.3 test server
 - This is a tls 1.3 test server using docker
+by [hackers.mu](https://hackers.mu)
 - Built with Alpine Linux, nginx 1.13.12, openssl 1.1.1 pre4, pcre, zlib, openresty_headers for nginx
 
 ## Setup Instructions
@@ -15,3 +16,6 @@
 ## Sample test server
 - https://tls14.com
 - Use command line options: openssl s_client -connect tls14.com:443 -tls1_3
+
+## Author
+Codarren Velvindron - codarren at hackers.mu
