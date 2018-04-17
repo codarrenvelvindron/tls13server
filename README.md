@@ -1,7 +1,13 @@
 # TLS 1.3 test server
 - This is a tls 1.3 test server using docker
 by [hackers.mu](https://hackers.mu)
-- Built with Alpine Linux, nginx 1.13.12, openssl 1.1.1 pre4, pcre, zlib, openresty_headers for nginx
+- Built with 
+1. Alpine Linux
+2. Nginx 1.13.12 (compiled from source) 
+3. Openssl 1.1.1 prerelease 4, 
+4. PCRE-8.42
+5. Zlib-1.2.11
+6. Openresty - headers-more-nginx-module
 
 ## Setup Instructions
 - Clone this repo
