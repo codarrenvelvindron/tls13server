@@ -1,4 +1,7 @@
 FROM alpine:latest
+
+MAINTAINER Codarren Velvindron <codarren@hackers.mu>
+
 RUN apk update && apk upgrade && apk add bash && apk add build-base \
     perl \
     libc-dev \
