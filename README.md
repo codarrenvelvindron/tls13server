@@ -4,7 +4,7 @@ by [hackers.mu](https://hackers.mu)
 - Built with 
 1. Alpine Linux
 2. Nginx 1.13.12 (compiled from source) 
-3. Openssl 1.1.1 prerelease 4, 
+3. Openssl 1.1.1 prerelease 4 (Compiled from source) 
 4. PCRE-8.42
 5. Zlib-1.2.11
 6. Openresty - headers-more-nginx-module
