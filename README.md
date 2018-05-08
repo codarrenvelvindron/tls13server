@@ -4,7 +4,7 @@ by [hackers.mu](https://hackers.mu)
 - Built with 
 1. Alpine Linux
 2. Nginx 1.13.12 (compiled from source) 
-3. Openssl 1.1.1 prerelease 4 (Compiled from source) 
+3. Openssl 1.1.1 prerelease 5 (Compiled from source) 
 4. PCRE-8.42
 5. Zlib-1.2.11
 6. Openresty - headers-more-nginx-module
@@ -17,7 +17,7 @@ by [hackers.mu](https://hackers.mu)
 - Modify nginx.conf to your taste (it already works perfectly)
 - In the main directory, build Dockerfile using:
 - docker build -t openssl_nginx_alpine .
-- Run using: docker run -dit --restart unless-stopped -p 443:443 -p 80:80 alpine_nginx-openssl
+- Running using volumes for logs/certs: docker run -dit -v "$(pwd)"/logs:/etc/nginx/logs -v "$(pwd)"/html:/etc/nginx/html -v "$(pwd)"/certs:/etc/nginx/certs  --restart unless-stopped -p 80:80 -p 443:443 openssl_nginx_alpine
 
 ## Sample test server
 - https://tls14.com
