@@ -23,5 +23,11 @@ by [hackers.mu](https://hackers.mu)
 - https://tls14.com
 - Use command line options: openssl s_client -connect tls14.com:443 -tls1_3
 
+## Usage
+- The Dockerfile is built in such a way that the log files and certs are externally mounted in volumes.
+- This means that any change to the static html files are immediately reflected upon the container.
+- All the while without having to rebuild the container.
+- Especially useful when renewing certificates and reading the log files without having to log on to the container.
+
 ## Author
 Codarren Velvindron - codarren at hackers.mu
